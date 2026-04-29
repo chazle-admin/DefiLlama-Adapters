@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "node scripts/buildImports.js",
+    "build": "node init && node scripts/buildImports.js",
     "lint": "eslint -c eslint.config.js .",
     "eslint:github-action": "eslint -c eslint.config.js .",
     "test-interactive": "node utils/testInteractive",
@@ -47,7 +47,7 @@
     "starknet": "^5.24.3",
     "ws": "^8.18.3"
   },
-  "overrides": {  },
+  "overrides": {},
   "description": "",
   "devDependencies": {
     "eslint": "^9.38.0"
